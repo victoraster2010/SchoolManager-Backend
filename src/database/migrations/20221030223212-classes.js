@@ -17,7 +17,7 @@ module.exports = {
         type: Sequelize.DataTypes.STRING,
         allowNull:false
       },
-      studentQuantity: {
+      student_quantity: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull:false
       }
