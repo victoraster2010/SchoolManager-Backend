@@ -26,9 +26,8 @@ APP_PORT=3001 # mudar caso for rodar uma instancia na nuvem
 
 ```
 ## Rodando PostgresSQL com uma instancia Docker 
- Pode alterar o --name par outra coisa, bem como USER e PASSWORD, sobre as portas, 
- em alguns ambientes Linux em minha experiência eu tive que espelhar a porta externa para outra a 5455, devido a uma questão de driver do pacote PG que este projeto usa para conectar o sequelize, 
- caso tenha esse problema de conexão mude o para -p 5455:5432 para mapear a porta sem conflitos
+ Pode alterar o --name para outro nome, bem como USER e PASSWORD, sobre as portas, 
+ em alguns ambientes Linux em minha experiência eu tive que espelhar a porta externa para outra a 5455, devido a uma questão de driver do pacote PG que este projeto usa para conectar o sequelize ao banco, caso tenha esse problema de conexão mude o para -p 5455:5432 para mapear a porta sem conflitos
 
 ``` 
 docker run --name postgresql -e POSTGRES_USER=myusername -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres
@@ -41,7 +40,7 @@ docker run --name postgresql -e POSTGRES_USER=myusername -e POSTGRES_PASSWORD=my
 
 ## Rodando o projeto
 Após clonar o projeto:
-Instalando as dependências:
+Instale as dependências:
 
 ``` 
 npm install
