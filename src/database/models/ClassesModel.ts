@@ -24,6 +24,10 @@ Classes.init({
   gradeLetter: {
     allowNull: false,
     type: DataTypes.STRING,
+  },
+  studentQuantity: {
+    allowNull:false,
+    type: DataTypes.INTEGER,
   }
   
 }, {
